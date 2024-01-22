@@ -1,9 +1,21 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 
 \usepackage[utf8]{inputenc}
 
 \usepackage{graphicx}
 \usepackage{csquotes}
+\usepackage{geometry}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+  linkcolor=blue,
+  anchorcolor=,
+  citecolor=,
+  filecolor=,
+  menucolor=,
+  runcolor=,
+  urlcolor=,
+}
+\geometry{a4paper, margin=3cm}
 
 \setlength{\parindent}{0em}
 
@@ -17,7 +29,11 @@
 
 \vspace{2cm}
 
-\tableofcontents
+\begingroup
+  \hypersetup{hidelinks}
+  \tableofcontents
+\endgroup
+
 
 \section{Introduction}
 
@@ -32,6 +48,90 @@ Have fun reading!
 
 \subsection{Contributing}
 
-This guide's \LaTeX-code is available on GitHub. If you want to add something, found out something new or just want to report false content, please submit a pull request or open an issue: https://github.com/NotYou404/ts2-anniversary-guide.
+This guide's \LaTeX-code is available on GitHub. If you want to add something, found out something new or just want to report false content, please submit a pull request or open an issue: \url{https://github.com/NotYou404/ts2-anniversary-guide}.
+
+\section{Getting Started}
+
+\subsection{Wood industry}
+\label{sec:woodindustry}
+
+The first thing you'll need is enough wood to expand using barracks and to build Mines, together with a solid food industry.
+
+The \hyperref[woodcutter]{Woodcutter} and the \hyperref[forester]{Forester} both produce about 60 items per hour, while the \hyperref[sawmill]{Sawmill} produces 80 items per hour. Therefore, it's best to use 4 \hyperref[woodcutter]{Woodcutters} and \hyperref[forester]{Foresters} with 3 \hyperref[sawmill]{Sawmills}. If you need more, add 1 to every of those, however this setup is very sufficient most of the time, unless you need to make a big fleet of \hyperref[ship]{Ships} right at the beginning.
+
+\subsection{Expansion}
+\label{sec:expansion}
+
+To have more space for your industry and to reach more mining spots, as well as pushing the enemy, you will need to expand your territory as quickly as possible. \hyperref[barrack]{Barracks} are the most efficient buildings to do so, as they only require 2 planks and therefore a minimum of 60 seconds to build. You should expand in every possible direction to quickly gain a size advantage over your enemies. To speed up the process, you can use some advanced mechanics, like using \hyperref[ghostbuildings]{ghost buildings}.
+
+\subsection{Mines and Food}
+\label{sec:minesandfoot}
+
+The first mining resource you'll need is gold. If you are the first one to find and use gold, you can quickly overcome the nearest enemy. To upgrade your soldiers, you need a \hyperref[mint]{Mint}, that requires one gold and one coal per coin. The production speed of a \hyperref[mine]{Mine} and a \hyperref[mint]{Mint} is in both cases 49 seconds per item, so you need exactly one \hyperref[coalmine]{Coal-} and one \hyperref[goldmine]{Gold Mine} to keep a \hyperref[mint]{Mint} running. Most of the time, 2 \hyperref[mint]{Mints} are enough for a run, so you'll want to not have more than 2 \hyperref[goldmine]{Gold Mines} running at a time. Make sure you spread those as much as possible to avoid having to destroy them again early.
+
+Depending on your \hyperref[startresources]{starting resources}, you might need to make new tools. As you already have between 8 and 32 iron in your headquarter, you should use that for your \hyperref[toolmaker]{Toolmaker} and turn his production off after the materials are used up, assuming you don't need any further tools.
+
+The next type of \hyperref[mine]{Mine} you will need is an \hyperref[ironmine]{Iron Mine} to make new soldiers. A \hyperref[smithy]{Smithy} required one iron and one Coal per weapon. To get iron, you also demand a \hyperref[smeltery]{Smeltery}, which requires one iron ore and one coal ore per iron. As both buildings take 49 seconds to fulfill their work, you need one \hyperref[ironmine]{Iron Mine} and two \hyperref[coalmine]{Coal Mines} to keep a \hyperref[smeltery]{Smeltery} + \hyperref[smithy]{Smithy} setup running. However, it's often advisable to have \textbf{two} \hyperref[smithy]{Smithies} and one \hyperref[brewery]{Brewery} running, so you should double that number.
+
+Lastly, there are \hyperref[stonemine]{Stone Mines}. If you are \textbf{not} playing on low \hyperref[startresources]{starting resources}, or you've got a stonecutter working, you won't need those at first. Place them as you need them.
+
+Assuming you didn't build any \hyperref[stonemine]{Stone Mines} immediately, we are at 2 \hyperref[goldmine]{Gold Mines}, 2 \hyperref[ironmine]{Iron Mines} and 6 \hyperref[coalmine]{Coal Mines}, making 10 in total. To get all those miners working, a good \hyperref[foodsystems]{food system} is essential. Also, check out this \hyperref[foodsystemcomparison]{food system comparison} to decide what suit's best for your particular map.
+
+In conclusion, start by building some \hyperref[fisherman]{Fisherman} and \hyperref[hunter]{Hunter}, as long as it makes sense and you have enough tools.
+Then continue investing in \hyperref[farm]{Farms}, \hyperref[mill]{Mills} and \hyperref[bakery]{Bakeries} for a healthy, vegan nutrition for your fellow miners.
+
+\section{Food Systems}
+\label{sec:foodsystems}
+
+There are mainly 4 types of food:
+
+\begin{itemize}
+  \item Fish
+  \item Bread
+  \item Ham (\hyperref[hunter]{Hunter})
+  \item Ham (\hyperref[slaughterhouse]{Slaughter})
+\end{itemize}
+
+\subsection{Fish}
+\label{sec:fish}
+
+Fishing is a great way to get food in the early game. One \hyperref[fisherman]{Fisherman} produces \textbf{roughly} one fish every 190 seconds. Therefore you need 4 \hyperref[fisherman]{Fisherman} to keep a single mine running. Depending on your \hyperref[startresources]{starting resources}, you will have a total of 3, 6 or 12 fishers available right at the beginning. Make sure you don't exceed this limit, as investing metal to employ more fisherman is just not worth it when comparing to other food systems.
+
+Note, that fishing is non-renewable.
+
+\subsection{Bread}
+\label{sec:bread}
+
+Bread is the best source of food during the game. It's renewable and you only need one \hyperref[bakery]{Bakery} to keep a \hyperref[mine]{Mine} running, as both buildings take 49 seconds to produce a good. To keep a \hyperref[bakery]{Bakery} running you need one \hyperref[mill]{Mill}, to keep that running you need about 1.75 \hyperref[farm]{Farms}. The \hyperref[bakery]{Bakery} also demands one bucket of water. Luckily, the \hyperref[well]{Well Worker} also takes exactly 49 seconds to work. That being said, a great ratio for a bread system is 7 \hyperref[farm]{Farms}, 4 \hyperref[mill]{Mills}, 4 \hyperref[bakery]{Bakeries} and 4 \hyperref[well]{Wells}.
+
+This system can feed 4 \hyperref[mine]{Mines} for just 11 tools in total.
+
+\subsection{Ham (Hunter)}
+\label{sec:hamhunter}
+
+The  \hyperref[hunter]{Hunter} can roughly produce one ham every 70 seconds under optimal conditions. While that is about thrice as fast as the fisherman, you usually don't get more than 20 ham for a big area, as animals don't renew at all. Hunters can be great for gaining some food very early in the game, however they're not worth considering anymore as you invest in other food systems.
+
+\subsection{Ham (Slaughter)}
+\label{sec:hamslaughter}
+
+The second option to produce ham also works along with \hyperref[farm]{Farms}, just like the \hyperref[bread]{Bread System}. The \hyperref[pigfarm]{Pig Farmer} grows one pig every 62 seconds, just like the \hyperref[slaughterhouse]{Slaughter} kills a pig every 62 seconds. A \hyperref[pigfarm]{Pig Farmer} needs wheat and water to feed his pigs, giving those right to the \hyperref[slaughterhouse]{Slaughter}. Therefore the optimal ratio consists of 9 \hyperref[farm]{Farms}, 7 \hyperref[pigfarm]{Pig Farms}, 5 \hyperref[well]{Wells} and 7 \hyperref[slaughterhouse]{Slaughterhouses} to feed about 5,5 mines.
+
+This renewable system uses up 16 tools in total.
+
+\subsection{Food System Comparison}
+\label{sec:foodsystemcomparison}
+
+As the \hyperref[fish]{Fish based system} (takes 4 tools per mine, non-renewable) and the \hyperref[hamhunter]{Ham producing, Hunter-based system} (very short living, non-renewable) aren't well suited for a rich ore economy, this comparison mainly focuses on the renewable \hyperref[bread]{Bread based-} and \hyperref[hamslaughter]{Meat producing, Slaughter-based system}.
+
+Here is a direct comparison of the optimal ratios of both systems in terms of \textbf{tool efficiency}, \textbf{production efficiency}, \textbf{amount of buildings} and \textbf{amount of spots} taken (This means, a Tier 1 building takes 1 spot, a Tier 2 building takes 2 spots and a Tier 3 building takes 3 spots. This is not an ingame mechanic, rather a way to summarize the Tier efficiency of a system), calculated down to feed a single mine of any type:
+
+\begin{itemize}
+  \item Bread requires 2,75 tools per mine while Ham takes up $2.\overline{90}$
+  \item Bread feeds exactly 4 mines with a setup while Ham can feed about 5.5, adding unnecessary complexity
+  \item Bread takes 4,75 buildings per mine while Ham requires $5.\overline{09}$
+  \item Bread takes 10,25 spots per mine while Ham requires $12.\overline{18}$
+\end{itemize}
+
+As you can see, the \hyperref[bread]{Bread system} wins every time and should therefore always be chosen over the \hyperref[hamslaughter]{Meat-based alternative}.
 
 \end{document}
