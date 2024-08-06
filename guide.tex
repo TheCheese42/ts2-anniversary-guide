@@ -163,7 +163,9 @@ After canceling the building you should destroy the barrack again to give your e
 \subsubsection{Complete Erasure}
 \label{sec:completeerasure}
 
-No, this is no suicide advice. In some situations there just isn't another option than forcing your opponent to approach you slowly by creating new buildings. To accomplish this, you can first silently evacuate important goods from storehouses near the front and then destroy all military buildings in a medium to big distance to the border. This way you can try to recover your industry (see the \hyperref[sec:minesandfoot]{Mines and Food} and \hyperref[sec:decentralization]{Decentralization} sections) and possibly overwhelm your enemy due to hurried \hyperref[sec:overexpansion]{overexpanding}.
+No, this is no suicide advice. In some situations there just isn't another option than forcing your opponent to approach you slowly by creating new buildings. To accomplish this, you can first silently evacuate important goods from storehouses near the front and then destroy all military buildings in a medium to big distance to the border at once. This way you can try to recover your industry (see the \hyperref[sec:minesandfoot]{Mines and Food} and \hyperref[sec:decentralization]{Decentralization} sections) and possibly overwhelm your enemy due to hurried \hyperref[sec:overexpansion]{overexpanding}.
+
+Note however, that this can greatly damage your economy if important mines are destroyed in the process. Make sure you got alternatives running \textbf{before} erasing.
 
 \section{Food Systems}
 \label{sec:foodsystems}
@@ -241,6 +243,65 @@ Ships are made in the \hyperref[sec:shipyard]{Shipyard}. When ready for a missio
 
 When a building demands something, the nearest \hyperref[sec:stockhouse]{Stockhouse} is asked to bring the good over. If there is no Stockhouse with the required good reachable over land and the demanded good is just coming out of a factory, this will go to the demanding building. Otherwise, the game will check for the item on an \hyperref[sec:islands]{Island}. If there is one, the item will be brought to the Islands \hyperref[sec:harbor]{Harbor} and will then eventually be brought to the Island or Mainland requesting the item via a \hyperref[sec:ships]{Ship}. To ensure a flowing good exchange, there should be at least 2 or 3 Ships dedicated to each Island.
 
+\section{Common Pitfalls}
+\label{sec:commonpitfalls}
+
+When there is so much strategy involved, there's also lots of room for error. Here you will learn of common pitfalls you need to avoid, some being more fatal than others.
+
+\subsection{Beginner Struggles}
+\label{sec:beginnerstruggles}
+
+The following describes common issues and solutions I learned while being new to the game, as well as when introducing new players.
+
+These will be ordered from early to later during a game.
+
+\subsubsection{Wood Issues}
+\label{sec:woodissues}
+
+This is something even more experienced players can struggle with sometimes. At the beginning of a game, one of the most important resources is wood. You need it for every single building in the game, as well as for \hyperref[sec:ships]{Ships} and \hyperref[sec:toolsmith]{Tools}. Especially at low \hyperref[sec:startingresources]{starting resources}, wood is spare when starting a new game. While you can get infinite wood from a good \hyperref[sec:woodindustry]{wood industry}, it's not always easy to get one up. If not enough wood is produced at the beginning, or even no wood at all (e.g. when other building were prioritized so there's no wood left for \hyperref[sec:woodcutter]{woodcutters} and \hyperref[sec:sawmill]{sawmills}), nothing can be built anymore and you're stuck during the part of the game where time matters the most. To solve this issue, other buildings need to be destroyed so the remaining can be used to build up wood producers.
+
+As this is something you definitely must avoid, you have to make sure to follow the \hyperref[sec:woodindustry]{wood industry section} before spending the valuable resource elsewhere.
+
+\subsection{Intermediate Issues}
+\label{sec:intermediateissues}
+
+Now follows a collection of things intermediate to advanced players should look after to optimize their gameplay. Note that these tips are not necessarily needed to win a game against bots. However, they will greatly enhance stability of everything you do.
+
+\subsubsection{Over-Expansion}
+\label{sec:overexpansion}
+
+Over-Expansion often happens when one party claims a lot of enemy territory in a short time by taking military buildings and connecting them only with simple roads. There won't be many buildings aside from military, making the \hyperref[sec:minimap]{minimap} look empty. However, this visual issue is not the main problem with this approach.
+
+Especially on big maps, over-expansion will cause the following problems.
+
+\begin{itemize}
+    \item Long transportation roads, making buildings take much longer to build or upgrade
+    \item Replenishment soldiers taking long to arrive after a battle
+    \item Carelessly created roads don't fit into a well organized \hyperref[sec:roadsystem]{road system}
+    \item Soldiers remain in buildings far from the front if those aren't emptied
+    \item Makes leveling soldiers really hard when no \hyperref[sec:generalgenerator]{General Generator} is used
+    \item Rapid expansion makes keeping track of natural resources (e.g. ore, fish) very hard
+    \item Attacking too fast gets low-health \hyperref[sec:general]{generals} killed before they could heal
+\end{itemize}
+
+And possible more.
+
+The most dangerous points are the long transport ways. Without a \hyperref[sec:decentralization]{decentralized} economy near the borders you have a big disadvantage against an opponent with a more compact boundary, or a better distributed industry, possibly getting overwhelmed, possible forcing you into a \hyperref[sec:completeerasure]{complete erasure}.
+
+To avoid this risk, make sure you don't attack too rapidly (unless strategically appropriate, e.g. when destroying gold industry or \hyperref[sec:storehouse]{storehouses}) and instead care about each chunk of new territory as much as you would when discovering new land by \hyperref[sec:expanding]{expanding} regularly.
+
+\subsection{Bugs}
+\label{sec:bugs}
+
+As The Settler II (10th anniversary) never really got any content updates, there are some minor, but gameplay-impacting bugs you should be aware of.
+
+\subsubsection{Builders stuck on an Island}
+\label{sec:buildersstuckonisland}
+
+When using \hyperref[sec:shipsandharbor]{ships and the harbor} to bring your forces to an island, you will want to build up a decentralized industry at some point. Unfortunately, there's a little bug that could make \textbf{all} your builders and/or \hyperref[sec:leveler]{levelers} stuck on an island when requesting a new building, and no one on the island is ready to take the job. While normally, workers would go back to the mainland when needed there, in this case, they don't. This will completely freeze progress on your mainland and other islands. To fix this, build a \hyperref[sec:storehouse]{storehouse} and send the workers to it, out of the harbor. After all are in the storehouse, allow them to go back to the harbor and they will go back to the mainland when needed.
+
+To generally prevent this from happening it's advisable to request a storehouse right when building a harbor.
+
 \section{Bonus}
 \label{sec:bonus}
 
@@ -282,6 +343,7 @@ As you can see, not only have your \hyperref[sec:startingresources]{Starting Res
 \subsubsection{More}
 \label{sec:challenge_more}
 
-Surely those challenges were hard. However, they're for sure not impossible! You can always look for custom maps, or even make your own one! Playing with other experts can also be quite challenging. You found a really, really (and I mean really) hard or even impossible challenge? Why not share it by \hyperref[sec:contributing]{Contributing}.
+Surely those challenges were hard. However, they're not impossible! You can always look for custom maps, or even make your own one! Playing with other experts can also be quite challenging. You found a really, really (and I mean really) hard or even impossible challenge? Why not share it by \hyperref[sec:contributing]{Contributing}.
 
 \end{document}
+
