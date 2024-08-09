@@ -53,8 +53,15 @@ Have fun reading!
 
 This guide's \LaTeX-code is available on GitHub. If you want to add something, found out something new or just want to report false content, please submit a pull request or open an issue: \url{https://github.com/TheCheese42/ts2-anniversary-guide}.
 
+\section{Installation}
+\label{sec:installation}
+
+The game can be bought from the GOG.com store \href{https://www.gog.com/en/game/the_settlers_2_10th_anniversary}{here}. Despite only supporting Microsoft Windows, playing it on UNIX systems like MacOS or Linux is no problem thanks to compatibility layers like \href{https://www.winehq.org}{Wine}.
+
 \section{Getting Started}
 \label{sec:gettingstarted}
+
+The following describes common actions needed to get a good start into a new game.
 
 \subsection{Wood industry}
 \label{sec:woodindustry}
@@ -75,7 +82,7 @@ The first mining resource you'll need is gold. If you are the first one to find 
 
 Depending on your \hyperref[sec:startresources]{starting resources}, you might need to make new tools. As you already have between 8 and 32 iron in your headquarter, you should use that for your \hyperref[sec:toolmaker]{Toolmaker} and turn his production off after the materials are used up, assuming you don't need any further tools.
 
-The next type of \hyperref[sec:mine]{Mine} you will need is an \hyperref[sec:ironmine]{Iron Mine} to make new soldiers. A \hyperref[sec:smithy]{Smithy} required one iron and one Coal per weapon. To get iron, you also demand a \hyperref[sec:smeltery]{Smeltery}, which requires one iron ore and one coal ore per iron. As both buildings take 49 seconds to fulfill their work, you need one \hyperref[sec:ironmine]{Iron Mine} and two \hyperref[sec:coalmine]{Coal Mines} to keep a \hyperref[sec:smeltery]{Smeltery} + \hyperref[sec:smithy]{Smithy} setup running. However, it's often advisable to have \textbf{two} \hyperref[sec:smithy]{Smithies} and one \hyperref[sec:brewery]{Brewery} running, so you should double that number.
+The next type of \hyperref[sec:mine]{Mine} you will need is an \hyperref[sec:ironmine]{Iron Mine} to make new soldiers. A \hyperref[sec:smithy]{Smithy} requires one iron and one Coal per weapon. To get iron, you also demand a \hyperref[sec:smeltery]{Smeltery}, which requires one iron ore and one coal ore per iron. As both buildings take 49 seconds to fulfill their work, you need one \hyperref[sec:ironmine]{Iron Mine} and two \hyperref[sec:coalmine]{Coal Mines} to keep a \hyperref[sec:smeltery]{Smeltery} + \hyperref[sec:smithy]{Smithy} setup running. However, it's often advisable to have \textbf{two} \hyperref[sec:smithy]{Smithies} and one \hyperref[sec:brewery]{Brewery} running, so you should double that number.
 
 Lastly, there are \hyperref[sec:stonemine]{Stone Mines}. If you are \textbf{not} playing on low \hyperref[sec:startresources]{starting resources}, or you've got a stonecutter working, you won't need those at first. Place them as you need them.
 
@@ -133,7 +140,7 @@ This method should forbid non-\hyperref[sec:general]{Generals} from fighting at 
 \subsection{The Power of Scattershots}
 \label{sec:powerofscattershots}
 
-\hyperref[sec:scattershot]{Scattershots} often seem useless, as they rarely hit something, shoot really slow, are already out of range or destroyed when the building process finishes. Lastly, they eat up lots of stone. However, they can still be an important tool during battle.
+\hyperref[sec:scattershot]{Scattershots} often seem useless, as they rarely hit something, shoot really slow and are already out of range or destroyed when the building process finishes. Lastly, they eat up lots of stone. However, they can still be an important tool during battle.
 
 First of all, check if you have enough stone. On some maps, stone is really spare, so building a scattershot can be fatal. If there is enough stone, however, there are situations where scattershots are really useful. Look at the following scenarios:
 
@@ -272,6 +279,32 @@ Ships are made in the \hyperref[sec:shipyard]{Shipyard}. When ready for a missio
 
 When a building demands something, the nearest \hyperref[sec:stockhouse]{Stockhouse} is asked to bring the good over. If there is no Stockhouse with the required good reachable over land and the demanded good is just coming out of a factory, this will go to the demanding building. Otherwise, the game will check for the item on an \hyperref[sec:islands]{Island}. If there is one, the item will be brought to the Islands \hyperref[sec:harbor]{Harbor} and will then eventually be brought to the Island or Mainland requesting the item via a \hyperref[sec:ships]{Ship}. To ensure a flowing good exchange, there should be at least 2 or 3 Ships dedicated to each Island.
 
+\section{Tips and Tricks}
+\label{sec:tipsandtricks}
+
+Finally, we come to the Tips and Tricks section. Here you'll find helpful concepts that will make your life a little (or a lot) easier. For each trick you will find a score of the impact this trick can have in a game. You should decide how much you are willing to do to optimize your gameplay.
+
+\subsection{Marking Mining Spots}
+
+\textit{Impact rating: 6/10 (efficiency boost especially on large maps)}\\
+
+When a geologist discoverers a new ore that you do not immediately need, you can mark the ore as such by placing a \hyperref[sec:mines]{mine} building without connecting it to your road system. Whenever you do need that ore, go to the \hyperref[sec:economybuildings]{buildings economy settings tab} (press "B" on the keyboard) and click on the desired mine.\\
+
+On the other hand, when one of your mines is exhausted, you can destroy the mine but leave the flag. This way you know that this spot is already exhausted and don't need to send another geologist later in the game.
+
+\subsection{Ghost Buildings}
+\label{sec:ghostbuildings}
+
+\textit{Impact rating: 1/10 (high effort, little impact, even on small maps with gold in the middle)}\\
+
+Ghost buildings are a technique that allows you to build mainly small buildings at the beginning of a new game at a higher speed by ensuring resources to be delivered a little quicker. Mainly useful for barracks as initial expansion can be accelerated.
+To pull this off, first block the resources you want to be delivered quickly from the headquarter. Second, place any building that requires the resources you want to be delivered quickly (e.g. a \hyperref[sec:lookouttower]{lookout tower}) near the buildings that should receive them. This is the ghost building. Whenever the resources for the ghost building are almost there, destroy the final road to the ghost building. Now the resources are lying around some flags near the ghost building and cannot go back to the headquarter. Now you can place the buildings you want to be built accelerated, and the required materials will be delivered a little quicker as they are already lying around near the target.
+
+\includegraphics[width=\textwidth]{ghostbuilding_crop}
+
+\textit{A barrack is being built using materials from a ghost lookout tower}
+
+
 \section{Common Pitfalls}
 \label{sec:commonpitfalls}
 
@@ -323,6 +356,26 @@ To avoid this risk, make sure you don't attack too rapidly (unless strategically
 \label{sec:forgettingmetalworks}
 
 Usually, you won't need the \hyperref[sec:metalworks]{metalworks} working all the time, as the iron could be invested into \hyperref[sec:soldiers]{Soldiers} instead. Therefore, turning it on whenever needed (e.g. when building new \hyperref[sec:farm]{farms}) is a completely valid approach. However, one should not forget to turn it off again after the required tools are produced. While this can waste medium amounts of iron, it also delays soldier production, depending on the \hyperref[sec:waredistribution]{ware distribution economy setting}. It's safest to wait in front of the metalworks until enough tools are produced.
+
+\subsubsection{No Stone}
+\label{sec:nostone}
+
+Certain maps don't have a lot of stone available, sometimes even just one stone field per party. Especially with low starting resources, this usually causes problems mid-game when building a \hyperref[sec:foodsystems]{food system} that requires a large amount of stone, or when creating many \hyperref[sec:harbor]{harbors}. The only two ways to get more stone when your natural resources are exhausted are trying to destroy enemy \hyperref[sec:stonemine]{stone mines} and mining the remaining yourself, and destroying buildings that required stone to be built. Good examples of these are enemy military buildings that you occupied. In the late game, destroying unneeded farms can also do the trick.
+
+While it is generally possible to get more stone this way, it requires you to be stronger than your opponents. Since this can't be ensured all the time, you should instead try to be as spare on stone as possible. This includes the following:
+
+\begin{itemize}
+    \item Don't use scattershots
+    \item Don't accidentally build the wrong building
+    \item Don't build stone-heavy buildings when you don't actually need them (e.g. the \hyperref[sec:fortress]{fortress})
+    \item Always let the materials be recovered when destroying buildings (i.e. don't destroy the flag)
+    \item Don't keep stone in endangered \hyperref[sec:storehouse]{storehouses}
+    \item Don't build more \hyperref[sec:harbor]{harbors} than needed
+\end{itemize}
+
+Be aware that these things do not harm - and are sometimes even great ideas - when enough stone is available.
+
+Additionally, you can make profit out of your enemy's stone issues. Whenever you got the upper hand, you should target the storehouses containing stone (e.g. next to a stone mine) and they will be unable to enhance their \hyperref[sec:soldiers]{soldier industry}.
 
 \subsection{Bugs}
 \label{sec:bugs}
