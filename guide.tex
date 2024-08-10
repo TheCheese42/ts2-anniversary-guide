@@ -61,7 +61,21 @@ The game can be bought from the GOG.com store \href{https://www.gog.com/en/game/
 \section{Getting Started}
 \label{sec:gettingstarted}
 
-The following describes common actions needed to get a good start into a new game.
+The following covers common actions needed to get a good start into a new game.
+
+\section{Road System}
+\label{sec:roadsystem}
+
+The most straightforward way to connect buildings is simply putting roads everywhere so everything is connected somehow. While this can work on small maps or poor economys, it's way more efficient to use a grid system. See the image below.
+
+\vspace{12pt}
+\includegraphics[width=\textwidth]{perfect_roadsystem_crop}
+\vspace{0pt}
+
+As you can see, there is no problem includig any buildings (except for \hyperref[sec:harbor]{harbors}) into this road grid. It even perfectly fits the \hyperref[sec:farm]{Farm}, as it enforces it's optimal layout. Usually it's a good idea to always stick with this system, even when taking up enemy buildings. Those may take 2 or even 4 building spots instead of one as they probably aren't in your grid pattern, however, including them anyway will most certainly pay off when raising an independent industry in the newly gained territory. Below is another example showing a fully working independent food- and wood industry using this grid.
+
+\vspace{12pt}
+\includegraphics[width=\textwidth]{roadsystem_in_use_crop}
 
 \subsection{Wood industry}
 \label{sec:woodindustry}
@@ -277,7 +291,7 @@ Ships are made in the \hyperref[sec:shipyard]{Shipyard}. When ready for a missio
 \subsection{Goods Transport}
 \label{sec:goodstransport}
 
-When a building demands something, the nearest \hyperref[sec:stockhouse]{Stockhouse} is asked to bring the good over. If there is no Stockhouse with the required good reachable over land and the demanded good is just coming out of a factory, this will go to the demanding building. Otherwise, the game will check for the item on an \hyperref[sec:islands]{Island}. If there is one, the item will be brought to the Islands \hyperref[sec:harbor]{Harbor} and will then eventually be brought to the Island or Mainland requesting the item via a \hyperref[sec:ships]{Ship}. To ensure a flowing good exchange, there should be at least 2 or 3 Ships dedicated to each Island.
+When a building demands something, the nearest \hyperref[sec:stockhouse]{Stockhouse} is asked to bring the goods over. If there is no Stockhouse with the required good reachable over land and the demanded good is just coming out of a factory, this will go to the demanding building. Otherwise, the game will check for the item on an \hyperref[sec:islands]{Island}. If there is one, the item will be brought to the Islands \hyperref[sec:harbor]{Harbor} and will then eventually be brought to the Island or Mainland requesting the item via a \hyperref[sec:ships]{Ship}. To ensure a flowing good exchange, there should be at least 2 or 3 Ships dedicated to each Island.
 
 \section{Tips and Tricks}
 \label{sec:tipsandtricks}
@@ -302,7 +316,7 @@ To pull this off, first block the resources you want to be delivered quickly fro
 
 \includegraphics[width=\textwidth]{ghostbuilding_crop}
 
-\textit{A barrack is being built using materials from a ghost lookout tower}
+\textit{A barrack is being built using materials from a ghost lookout tower.}
 
 
 \section{Common Pitfalls}
@@ -387,7 +401,9 @@ As The Settler II (10th anniversary) never really got any content updates, there
 
 When using \hyperref[sec:shipsandharbor]{ships and the harbor} to bring your forces to an island, you will want to build up a decentralized industry at some point. Unfortunately, there's a little bug that could make \textbf{all} your builders and/or \hyperref[sec:leveler]{levelers} stuck on an island when requesting a new building, and no one on the island is ready to take the job. While normally, workers would go back to the mainland when needed there, in this case, they don't. This will completely freeze progress on your mainland and other islands. To fix this, build a \hyperref[sec:storehouse]{storehouse} and send the workers to it, out of the harbor. After all are in the storehouse, allow them to go back to the harbor and they will go back to the mainland when needed.
 
-To generally prevent this from happening it's advisable to request a storehouse right when building a harbor.
+Note that while this mostly happens to builders and levelers, all workers than can be demanded by an island could be affected by this.
+
+To generally prevent this from happening it's advisable to request a \hyperref[sec:storehouse]{Storehouse} right when building a harbor. While this doesn't seem to entirely prevent this bug from happening, it allows you to quickly send the workers to the storehouse to free them.
 
 \section{Bonus}
 \label{sec:bonus}
@@ -395,10 +411,27 @@ To generally prevent this from happening it's advisable to request a storehouse 
 \subsection{Bonus A: Challenges}
 \label{sec:challenges}
 
+\subsection{In a Rush}
+\label{sec:challenge_rush}
+
+This one isn't too hard, however it allows you to practice your skills in quickly building up a solid economy using low starting resources and no stone piles available.
+
+\begin{itemize}
+    \item Map: Fight2 (Odd map file name, it's the 8th entry in the dropdown menu, before "Paradise Island")
+    \item \hyperref[sec:startingresources]{Starting Resources}: Low
+    \item Win Condition: Defeat all Enemies
+    \item Fog of War: On
+    \item Enemies: All in the same team, highest difficulty
+\end{itemize}
+
+Your goal should be to be by far the first at the large gold deposits in the center and immediately start mining with a food economy already set up. This is also the perfect map to use \hyperref[sec:ghostbuildings]{Ghost Buildings}. Additionally you could try not to produce any soldiers but only using the 25 from your starting resources.
+
+Challenges like this can really unveil wether you understood the \hyperref[sec:gettingstarted]{Getting Started} section and are able to apply it properly.
+
 \subsubsection{The Ultimate Challenge}
 \label{sec:challenge_ultimate}
 
-You really studied the game and want to show off your Skill using an incredibly hard challenge? This one's for you.
+You really studied the game and want to show off your skills using an incredibly hard challenge? This one's for you.
 
 \begin{itemize}
   \item Map: Paradise Island
@@ -421,7 +454,7 @@ You beat the last challenge? Good job! But there's more. This time you got even 
   \item Win Condition: None (Endless Game)
   \item Fog of War: On
   \item Enemies: All in the same team, highest difficulty
-  \item HQ's: All randomized
+  \item HQs: All randomized
   \item Custom Goal: Completely destroy every Enemy, make sure no one's got any territory left
 \end{itemize}
 
