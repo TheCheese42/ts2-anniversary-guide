@@ -44,9 +44,7 @@
 \end{displayquote}
 \hspace{2cm}- \textit{\href{https://en.wikipedia.org/wiki/The_Settlers_II_(10th_Anniversary)}{Wikipedia}}\\
 
-This guide is not just about getting started with the game, as well as some tricks and tips, but also aims to cover more advanced techniques and strategies, along with specialized optimizations and common pitfalls.
-
-Have fun reading!
+This guide is not just about getting started with the game, as well as some tricks and tips, but also aims to cover more advanced techniques and strategies, along with specialized optimizations and common pitfalls. The main part is focussed only on the base version of the game. However, there is a \hyperref[sec:vikings]{bonus category} on the Vikings addon. Have fun reading!
 
 \subsection{Contributing}
 \label{sec:contributing}
@@ -134,6 +132,10 @@ To fight you need to recruit and upgrade your soldiers. For this, there are two 
 \subsubsection{General Farm}
 \label{sec:generalfarm}
 
+\textit{If using the Vikings addon, see also \hyperref[sec:generalfarmbuff]{General Farm Buff}.}
+
+\vspace{12pt}
+
 To recruit a single \hyperref[sec:private]{Private}, \hyperref[sec:smithy]{one Sword, one Shield} and one \hyperref[sec:brewery]{Beer} need to be in a single \hyperref[sec:storehouse]{Storehouse}, a private will spawn automatically. To level up Soldiers, all you need is a \hyperref[sec:mint]{Coin} in a military building. One Soldier of every level gets promoted by one (i.e. if you have one of each \hyperref[sec:private]{Private}, \hyperref[sec:corporal]{Corporal}, \hyperref[sec:sergeant]{Sergeant} and \hyperref[sec:officer]{Officer}, all of them get promoted.
 
 Of course, you could just let the coins be delivered directly to the front. However, it's much more efficient if you only allow coins in one building near the Headquarter, so you can let \hyperref[sec:private]{Privates} come in and let them promote, then throw them out again. For this to work, you need to prefer weak defensive Soldiers in your global economy settings.
@@ -142,7 +144,7 @@ Of course, you could just let the coins be delivered directly to the front. Howe
 \label{sec:generalgenerator}
 
 As you might have noticed, the previous system has some drawbacks. Mainly you need to modify the global economy settings badly so that there will be only \hyperref[sec:private]{Privates} in your military buildings, unless you manage to train everyone to the maximum level. To avoid this, you can build a setup where everything required to recruit and promote a Soldier gets brought into a single \hyperref[sec:storehouse]{Storehouse}. For promotion, you should build a \hyperref[sec:watchtower]{Watchtower} or, preferably, a \hyperref[sec:stronghold]{Stronghold} connected to the \hyperref[sec:storehouse]{Storehouse}. To prevent \hyperref[sec:private]{Privates} from coming out, There shouldn't be a road to the rest of your civilization, so to transport goods but not people, you have to use a water road. Now, go to your \hyperref[sec:storehouse]{Storehouse} and block any Soldiers but \hyperref[sec:private]{Privates} from going in.
-
+\vspace{12pt}
 In the end, if you've got \hyperref[sec:brewery]{Beer}, \hyperref[sec:smithy]{Swords and Shields} in that exact \hyperref[sec:storehouse]{Storehouse}, a \hyperref[sec:private]{Private} will spawn, go to the connected \hyperref[sec:watchtower]{Watchtower} or \hyperref[sec:stronghold]{Stronghold} and upgrade to \hyperref[sec:general]{General} level. As one Soldier (if you want to prefer strong soldiers in your global economy settings, even though it shouldn't be needed when using this technique, you must wait until all soldiers got promoted. However, this is very inefficient as one Soldier of every level could get promoted otherwise) in the building becomes a \hyperref[sec:general]{General}, you can evacuate him so there's space for another \hyperref[sec:private]{Private}. The evacuated \hyperref[sec:general]{General} can't go back to the \hyperref[sec:storehouse]{Storehouse}, so he will search for the nearest road and go to a different \hyperref[sec:storehouse]{Storehouse}, \hyperref[sec:harbor]{Harbor}, or your Headquarter.
 
 \vspace{0.5cm}
@@ -467,5 +469,69 @@ As you can see, not only have your \hyperref[sec:startingresources]{Starting Res
 
 Surely those challenges were hard. However, they're not impossible! You can always look for custom maps, or even make your own one! Playing with other experts can also be quite challenging. You found a really, really (and I mean really) hard or even impossible challenge? Why not share it by \hyperref[sec:contributing]{Contributing}.
 
-\end{document}
+\subsection{Bonus B: Vikings addon}
+\label{sec:vikings}
 
+The Vikings (german: Wikinger) addon for The Settlers II - 10th anniversary was released 2007 in the german language. While it mainly comes with a new race and a second campain path, it also brings some other minor changes, some of which can sustainably change gameplay.
+
+The following is a non-exhaustive list of changes.
+
+\begin{itemize}
+  \item Added 3 New Bonus Maps
+  \item Coin delivery is now turned off by default when building or claiming a new military building
+  \item Added a "Soldaten hier ausbilden" (Train Soldiers here) button inside every \hyperref[sec:stockhouse]{Stockhouse}, \hyperref[sec:harbor]{Harbor} and the Headquarter. Weapons and beer will now exclusively be delivered to that building.
+  \item An economy \hyperref[sec:messages]{Message} is sent, warning the player when Soldier count in storehouses drops below 20
+  \item An economy Message is sent, warning the player when plank or stone count in storehouses drops below 20
+  \item The \hyperref[sec:hunter]{Hunter} now emits a no resources found economy message
+  \item New orange map indicators now signal certain events:
+    \begin{itemize}
+      \item Building constructed (circle)
+      \item Military building manned (circle)
+      \item Campain Quest target (cross)
+      \item Attack or defense ended, no matter the outcome (fire)
+      \item Building emits a no resources found economy message (circle)
+    \end{itemize}
+    Additionally, the position of ships is now permanently visible on the map through ship markers.
+  \item Added new Viking \hyperref[sec:ships]{Ship} names
+  \item An economy message is sent when there's a traffic jam around a flag
+  \item An economy message is sent when a new tool was produced
+  \item Buildings now drop remaining resources stored inside when destroyed
+  \item Combat messages are now sent when an attack fails, and when a defense was successful
+  \item Apparently, raw materials now prefer local industry buildings more reliably
+     \begin{itemize}
+       \item Potential bug: Soldier preference is ignore if a storehouse with different soldiers is closer to the building
+     \end{itemize}
+  \item [UI] The mouse wheel can now be used to change sliders
+\end{itemize}
+
+Most of those are clearly informational or cosmetic, but some can really make a difference in gameplay.
+
+\subsubsection{General Farm buff}
+\label{sec:generalfarmbuff}
+
+Multiple changes make building a \hyperref[sec:generalfarm]{General Farm} arguable easier and more effective. Those include the new coin delivery default, the "Train Soldiers here" button and the potential soldier bug.
+
+Due to the new coin delivery default, it's now much easier to ensure that only the dedicated building is capable of receiving coing. The new button removes the necessity of disallowing weapons, beer and coins in every storehouse except for the right one (which, of course, not only applies to the General Farm). However, most interesting is the new bug, which can be abused as feature.
+
+To explain in detail, the bug causes the "Prefer strong/weak Soldiers" economy setting to only take a secondary effect. Whatever storehouse is the closesd to the military building sends its soldiers out - no matter if strong or weak. If there are both strong and weak soldiers in the storehouse, the economy setting decides. While this is really annoying when generals are further away from the demanding building than privates, as it's nearly impossible to allocate the right soldiers without evacuating storehouses, it can be really useful in the situation of a General Farm.
+
+If you know that you will only have one shared border where strong soldiers frequently have to go to - which definitely can't be assured on many maps, in that cases it's best to continue using the farm as without the Vikings addon - you can build two \hyperref[sec:storehouse]{Storehouses} around your Watchtower or Fortress that is used to promote soldiers. One must be in the direction of the enemy border and the other in the opposite direction. Make sure the first one is \textbf{further} away from the military building than the second. Now, dedicate the second storehouse to train soldiers using weapons and beer. It should also hold the coins needed to promote soldiers. Additionally \textbf{disallow} generals to be in that storehouse. The storehouse near the enemy border should disallow all soldiers but generals. The economy soldier preference should still prefer weak soldiers to allow kicking soldiers out of the military building more efficiently.
+
+\vspace{0.4cm}
+\includegraphics[width=\textwidth]{improved_general_farm}
+\vspace{0.1cm}
+
+This setup results in the following process:
+
+\begin{itemize}
+  \item Privates are recruited in the inner storehouse
+  \item Privates go into the military building
+  \item They're promoted to Generals
+  \item When kicked, they are forced to go into the further away storehouse
+  \item That storehouse being further away ensures that only privates enter the military building
+  \item Because they're closer to the border, Generals will be preferred when a military building near the border demands soldiers
+\end{itemize}
+
+The other General Farm limitations do apply. E.g., Privates can still be sent into fight when there are no Generals available. That's why it's still advisable to use a \hyperref[sec:generalgenerator]{General Generator} instead, which also benefits from the new recruitment storehouse button.
+
+\end{document}
